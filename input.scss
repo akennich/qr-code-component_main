@@ -36,7 +36,7 @@ h1 {
     font-weight: $Weight2;
 }
 h5 {
-    color: $Light-gray;
+    color: ($Light-gray, 0,7);
     text-align: center;
     font-size: 1em;
     font-weight: $Weight1;
