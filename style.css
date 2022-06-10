@@ -33,7 +33,7 @@ h1 {
 }
 
 h5 {
-  color: hsl(212deg, 45%, 89%);
+  color: hsl(212deg, 45%, 89%), 0, 7;
   text-align: center;
   font-size: 1em;
   font-weight: 400;
