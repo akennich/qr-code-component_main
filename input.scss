@@ -1,46 +1,50 @@
+
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%); 
+$Weight1: 400; 
+$Weight2: 700; 
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 body {
-  background-color: hsl(212deg, 45%, 89%);
-  font-size: 15px;
-  font-family: "Outfit", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background-color: $Light-gray;
+    font-size: 15px;  
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .card {
-  background-color: hsl(0deg, 0%, 100%);
-  margin-top: 3rem;
-  width: 21rem;
-  border-radius: 1em;
-  padding: 1em;
+    background-color: $White;
+    margin-top: 3rem;
+    width: 21rem;
+    border-radius: 1em;
+    padding: 1em;
 }
-
 img {
-  width: 19rem;
-  border-radius: 1em;
+    width: 19rem;
+    border-radius: 1em;
 }
+@mixin theme($theme: $Dark-blue) {
+    text-align: center;
+    color: $theme;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
 
 h1 {
-  text-align: center;
-  color: hsl(218deg, 44%, 22%);
-  margin-left: 2em;
-  margin-right: 2em;
-  font-size: 1.3em;
-  font-weight: 700;
+    @include theme;
+    font-size: 1.5em;
+    font-weight: $Weight2;
 }
-
 h5 {
-  text-align: center;
-  color: hsl(212deg, 45%, 89%), 0.7;
-  margin-left: 2em;
-  margin-right: 2em;
-  font-size: 1em;
-  font-weight: 400;
+    @include theme($theme: ($Light-gray, 0.7));
+    font-size: 1em;
+    font-weight: $Weight1;
 }
 
-/*# sourceMappingURL=style.css.map */
+
