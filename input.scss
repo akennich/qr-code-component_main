@@ -34,8 +34,8 @@ img {
 @mixin theme($theme: $Dark-blue) {
     text-align: center;
     color: $theme;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
 h1 {
