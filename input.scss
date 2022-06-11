@@ -42,7 +42,7 @@ h1 {
     font-size: 1.5em;
     font-weight: $Weight2;
 }
-h5 {
+h2 {
     @include theme($theme: ($Light-gray, 0.7));
     font-size: 1em;
     font-weight: $Weight1;
