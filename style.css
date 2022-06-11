@@ -3,6 +3,8 @@
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   background-color: hsl(212deg, 45%, 89%);
   font-size: 15px;
   font-family: "Outfit", sans-serif;
